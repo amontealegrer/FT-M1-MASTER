@@ -1,0 +1,195 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*Aqui empieza el CSS de mi página web*/
+
+div.contenedor{
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+
+    background: rgba(204, 204, 204, .4);
+    border-radius: 5px, 5px, 10px, 1opx;
+}
+
+header, nav, section, article, footer{
+    border-radius: 10px;
+    border: solid 2px black;
+    padding: 15px;
+    margin-top: 10px;
+}
+
+header{
+    height: 160px;
+    width: 100%;
+    float: center;
+    background-color: #ffaaaa;
+    overflow: hidden;
+}
+
+nav{
+    width: 30%;
+    float: left;
+    background-color: #fff0aa;
+    margin-left: 10px;
+}
+
+section{
+    width: 60%;
+    float: right;
+    background-color: #d8b0ff;
+    overflow: hidden;
+}
+
+footer{
+    height: 70px;
+    width: 100%;
+    float: left;
+    background-color: #b0e8ac;
+    overflow: hidden;
+}
+
+header, footer, article{
+    margin-bottom: 10px;
+}
+
+article{
+    width: 90%;
+    float: center;
+    background-color: #aaf0ff;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body{
+    line-height: 1;
+    background-color: #eee;
+    color: #333;
+    font: 16px/28px Georgia, 'Times new roman', Times, serif;
+}
+
+/*Headings*/
+
+h1, h2, p{
+    font-family: 'Droid serif', sans-serif;
+    text-shadow: 0 2px 0 #fff;
+}
+
+h1{
+    font-size: 32px;
+}
+
+h2{
+    font-size: 26px;
+}
+
+
+header h1{
+    font-size: 40px;
+    font: bold;
+    margin-top: 7%;
+    float: left;
+}
+
+header img{
+    float: right;
+    height: 100%;
+    margin-right: 5%;
+
+    transition-delay: 0s;
+    transition-duration: 2s;
+    transition-property: all;
+
+}
+
+header img:hover{
+    height: 120%;
+    margin-right: 15%;
+    transform: rotate(30deg);
+}
+
+footer img{
+    float: left;
+    height: 100%;
+    margin-right: 20%;
+}
+
+li a{
+    display: inline-block;
+    font-size: 1.1.em;
+    font-family: sans-serif;
+    padding: 10% 20%;
+    color: #668428;
+
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cdeb8e), color-stop(100%, #a5c956));
+
+    border-radius: 20px 0 20px 0;
+
+    text-shadow: 1px 1px 1px #e1fea6;
+    box-shadow: opx 6px 0 #819f45;
+
+    margin-bottom: 5px;
+    width: 20%;
+
+} 
+
+li a:hover{
+    border-radius: 0 20px 0 20px;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#99ffcc), color-stop(100%, #009966));
+}
+
+li a:active{
+    position:relative;
+    top: 3px;
+
+    box-shadow: 0px 3px 0 #336666;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#009966), color-stop(100%, #99ffcc));
+}
+
